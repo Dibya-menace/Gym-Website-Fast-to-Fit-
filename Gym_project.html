@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast to Fit</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Parkinsans:wght@300..800&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        font-family: "Momo Trust Display", sans-serif;
+        font-size: 17px;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        background-repeat: no-repeat;
+        height: 2500px;
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .left img {
+        width: 200px;
+        height: auto;
+    }
+
+    .center {
+        display: block;
+        font-size: 10px;
+        width: 45%;
+        margin: 40px auto;
+        /* border: 2px solid green; */
+        padding: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 33px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: auto;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 28px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: rgb(161, 157, 157);
+        text-decoration: underline;
+        padding: 34px 23px;
+    }
+
+    .btn {
+        font-family: "Momo Trust Display", sans-serif;
+        margin: 0px 9px;
+        background-color: rgb(41, 41, 46);
+        color: white;
+        padding: 20px 36px;
+        border: 2px solid white;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .btn:hover {
+        background-color: rgb(78, 77, 77);
+
+    }
+    .container{
+        /* border: 2px solid white; */
+        margin: 120px 175px;
+        padding: 75px;
+        width: 50%;
+        border-radius: 20px;
+    }
+    .form-group input{
+        font-family: "Momo Trust Display", sans-serif;
+        text-align: center;
+        font-size: 25px;
+        display: block;
+        width: 60%;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 15px auto;
+        border-radius: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 61%;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo1.jpeg" alt="">
+            <div>Fast to Fit</div>
+        </div>
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Equipments</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Login/Register</button>
+            <button class="btn">Join Now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Take the membership now to get <b>20%</b> discount on one month membership</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
