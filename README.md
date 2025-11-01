@@ -37,5 +37,4 @@ It provides a modern landing page layout with navigation, membership registratio
 
 ---
 
-## 📂 Project Structure
 
